@@ -1,0 +1,26 @@
+{
+  "name": "www.webdevtalks.mx",
+  "version": "0.0.1",
+  "homepage": "https://github.com/daniel-g/www.webdevtalks.mx",
+  "authors": [
+    "Daniel Gaytan <dgaytan6@gmail.com>"
+  ],
+  "description": "Web dev talks main page",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "jquery": "latest",
+    "angular": "latest",
+    "fullpage.js": "latest"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

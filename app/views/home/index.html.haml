@@ -1,13 +1,12 @@
-#mock-scroller
 =render 'shared/menu_nav'
 #content
-  %section#story-home
+  .section
     =render 'home'
-  %section#story-topics{"anim-pause" => "1000"}
+  .section
     =render 'topics'
-  %section#story-cfp
+  .section
     =render 'cfp'
-  %section#story-wdt{"data-nav" => "Speakers"}
+  .section
     =render 'wdt'
-  %section#story-location{"anim-pause" => "500"}
+  .section
     =render 'location'

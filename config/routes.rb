@@ -1,5 +1,4 @@
 WDT::Application.routes.draw do
-
   root to: 'home#index'
 
   namespace :admin do
@@ -11,5 +10,4 @@ WDT::Application.routes.draw do
   end
 
   resources 'papers', only: [:create, :new]
-
 end

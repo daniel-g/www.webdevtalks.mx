@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby   '2.1.1'
 
-gem 'rails', '~> 4.0.4'
+gem 'rails', '~> 4.1.6'
 gem 'pg',    '~> 0.17.1'
 gem 'puma',  '~> 2.8.1'
 
@@ -9,14 +9,10 @@ gem 'coffee-rails',   '~> 4.0.1'
 gem 'haml-rails',     '~> 0.5.3'
 gem 'sass-rails',     '~> 4.0.2'
 
-gem 'bootstrap-sass',          '~> 3.1.1.0'
-gem 'jquery-rails',            '~> 3.1.0'
-gem 'jquery-validation-rails', '~> 1.11.1.1'
-gem 'turbolinks',              '~> 2.2.1'
+gem 'foundation-rails'
 gem 'uglifier',                '>= 2.5.0'
 
 gem 'activevalidators',              '~> 2.1.0'
-gem 'activerecord-humanized_errors', '~> 2.0.0'
 
 gem 'httparty',        '~> 0.13.1'
 gem 'omniauth-github', '~> 1.1.2'

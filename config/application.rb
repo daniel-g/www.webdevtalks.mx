@@ -23,5 +23,16 @@ module WDT
       g.test_framework      :rspec, fixture: true
       g.fixture_replacement :fabrication
     end
+    config.assets.paths << Rails.root.join('vendor', 'assets', 'components')
+    config.assets.precompile.shift
+
+    # Explicitly register the extensions we are interested in compiling
+    config.assets.precompile.push(Proc.new do |path|
+      File.extname(path).in? [
+        '.html', '.erb', '.haml',                 # Templates
+        '.png',  '.gif', '.jpg', '.jpeg', '.svg', # Images
+        '.eot',  '.otf', '.svc', '.woff', '.ttf', # Fonts
+      ]
+    end)
   end
 end
