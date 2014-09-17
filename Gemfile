@@ -5,9 +5,8 @@ gem 'rails', '~> 4.1.6'
 gem 'pg',    '~> 0.17.1'
 gem 'puma',  '~> 2.8.1'
 
-gem 'coffee-rails',   '~> 4.0.1'
-gem 'haml-rails',     '~> 0.5.3'
-gem 'sass-rails',     '~> 4.0.2'
+gem 'haml'
+gem 'sass'
 
 gem 'foundation-rails'
 gem 'uglifier',                '>= 2.5.0'

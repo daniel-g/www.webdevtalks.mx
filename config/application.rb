@@ -26,6 +26,8 @@ module WDT
     config.assets.paths << Rails.root.join('vendor', 'assets', 'components')
     config.assets.precompile.shift
 
+    config.assets.precompile << ['modernizr.js']
+
     # Explicitly register the extensions we are interested in compiling
     config.assets.precompile.push(Proc.new do |path|
       File.extname(path).in? [

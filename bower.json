@@ -14,7 +14,8 @@
   "dependencies": {
     "jquery": "latest",
     "angular": "latest",
-    "fullpage.js": "latest"
+    "fullpage.js": "latest",
+    "modernizr": "latest"
   },
   "ignore": [
     "**/.*",
