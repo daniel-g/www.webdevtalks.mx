@@ -1,21 +1,18 @@
-%ul#nav
-  %li.home
-    %h1{style: "display: none; opacity: 0; left: 15px;"}
-      %span Inicio
-    =link_to 'home', '#home'
-  %li.topics
-    %h1{style: "display: none; opacity: 0; left: 15px;"}
-      %span Temas del Mes
-    =link_to 'tema', '#topics'
-  %li.cfp
-    %h1{style: "display: none; opacity: 0; left: 15px;"}
-      %span Convocatoria
-    =link_to 'cfp', '#cfp'
-  %li.speakers
-    %h1{style: "display: none; opacity: 0; left: 15px;"}
-      %span WDT
-    =link_to 'conferencistas', '#wdt'
-  %li.location
-    %h1{style: "display: none; opacity: 0; left: 15px;"}
-      %span Lugar
-    =link_to 'contacto', '#location'
+%nav.js-fullpage-menu.top-bar{"data-topbar" => "", :role => "navigation"}
+  %ul.title-area
+    %li.name(data-menuanchor='home' class='active')
+      %h1
+        %a(href= "#home") Web Dev Talks
+    %li.toggle-topbar.menu-icon
+      %a(href= "#home")
+        %span Menu
+  %section.top-bar-section
+    %ul.left
+      %li(data-menuanchor='topics')
+        %a(href="#topics") Topics
+      %li(data-menuanchor='cfp')
+        %a(href="#cfp") Papers
+      %li(data-menuanchor='about')
+        %a(href="#about") About
+      %li(data-menuanchor='location')
+        %a(href="#location") Location
