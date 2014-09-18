@@ -5,6 +5,6 @@
 $(function(){
   $('#content').fullpage({
     menu: '.js-fullpage-menu',
-    anchors: ['home', 'topics', 'cfp', 'about', 'location']
+    anchors: ['home', 'topics', 'location', 'cfp']
   });
 })
