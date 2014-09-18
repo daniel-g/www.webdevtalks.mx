@@ -1,16 +1,21 @@
 .row
-  %ul.large-12.columns
-    - speakers.each do |speaker|
-      %li.row
-        .large-1.columns
-          =image_tag speaker.avatar_url
-        .large-11.columns
+  .large-12.columns
+    %h2 Topics
+.row
+  .large-12.columns
+    %ul.no-bullet.large-block-grid-2
+      - speakers.each do |speaker|
+        %li
           .row
-            .large-12.columns
-              %h2= speaker.speech_title
-          .row
-            .large-12.columns
-              =link_to speaker.name, '#'
-          .row
-            .large-12.columns
-              =link_to "@#{ speaker.social_name }", "github.com/#{ speaker.social_name }"
+            .large-3.columns
+              =image_tag speaker.avatar_url
+            .large-9.columns
+              .row
+                .large-12.columns
+                  %h2= speaker.speech_title
+              .row
+                .large-12.columns
+                  =link_to speaker.name, '#'
+              .row
+                .large-12.columns
+                  =link_to "@#{ speaker.social_name }", "github.com/#{ speaker.social_name }"
