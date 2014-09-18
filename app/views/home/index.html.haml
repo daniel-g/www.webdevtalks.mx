@@ -1,10 +1,15 @@
 =render 'shared/menu_nav'
+%a(name='home')
+=render 'home'
 .row
   .large-12.columns
-    =render 'home'
+    %hr
+%a(name='temas')
+=render 'topics'
+%a(name='lugar')
+=render 'location'
+.row
   .large-12.columns
-    =render 'topics'
-  .large-12.columns
-    =render 'location'
-  .large-12.columns
-    =render 'cfp'
+    %hr
+%a(name='convocatoria')
+=render 'cfp'
