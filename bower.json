@@ -15,7 +15,8 @@
     "jquery": "latest",
     "angular": "latest",
     "fullpage.js": "latest",
-    "modernizr": "latest"
+    "modernizr": "latest",
+    "normalize.css": "latest"
   },
   "ignore": [
     "**/.*",
